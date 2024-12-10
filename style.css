@@ -1,0 +1,182 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700");
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background: #F5F7FA;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 4px;
+  background: #F45050; /* Coral accent */
+  margin: 0.5em auto 0 auto;
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #2e2e2e;
+  text-align: center;
+}
+
+p, ul, ol, blockquote {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  color: #333;
+}
+
+ul, ol {
+  text-align: left;
+  padding-left: 40px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #F45050;
+  padding-left: 20px;
+}
+
+/* Container & Sections */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.alt-bg {
+  background: #ffffff;
+}
+
+/* Hero Banner */
+.banner {
+  background:
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('../images/background.jpg') no-repeat center/cover;
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.banner h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.banner p {
+  margin-bottom: 40px;
+}
+
+/* Avatar */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: #F45050;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #D84343;
+  transform: translateY(-2px);
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.card img {
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* Last Section Spacing */
+.section:last-of-type {
+  padding-bottom: 80px;
+}
